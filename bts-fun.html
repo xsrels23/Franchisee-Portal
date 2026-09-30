@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behind-the-Scenes & "Fun" Moments - Brand Booster Media</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brandDark: '#111827',
+            brandGray: '#1f2937',
+            brandMuted: '#6b7280',
+            brandPink: '#ec4899',
+            brandPurple: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+    <div class="px-8 pt-8 pb-6 border-b border-gray-50 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="logo.png" alt="Brand Boosters Logo" class="w-10 h-10 object-contain mr-3">
+        <div>
+          <span class="font-extrabold text-sm tracking-tight text-brandDark block">Brand Booster Media</span>
+          <span class="text-[8px] font-black text-brandMuted uppercase tracking-widest block -mt-1">Order Pipeline</span>
+        </div>
+      </div>
+      <span class="text-brandPink font-extrabold uppercase tracking-widest text-[9px] bg-brandPink/10 px-3 py-1 rounded-full">Objective 9</span>
+    </div>
+
+    <div class="px-8 py-6 bg-gradient-to-r from-pink-50/30 to-purple-50/30">
+      <h2 class="text-2xl font-black text-brandDark tracking-tight">Behind-the-Scenes & "Fun" Moments</h2>
+      <p class="text-sm text-brandMuted mt-2 leading-relaxed">
+        Candid clips, like students telling jokes or staff preparing for a big event. These lighthearted videos foster a sense of belonging and community engagement.
+      </p>
+    </div>
+
+    <div class="p-8">
+      <div class="mb-8 p-5 bg-amber-50/50 border-l-4 border-amber-500 rounded-r-2xl">
+        <h4 class="text-sm font-extrabold text-amber-800 flex items-center gap-2 mb-3">
+          <i data-lucide="video" class="w-4 h-4 text-amber-600"></i>
+          MANDATORY FILMING STANDARD
+        </h4>
+        <ul class="text-xs text-amber-900 space-y-2 font-medium leading-relaxed">
+          <li>• <strong class="text-amber-950">Orientation:</strong> Always hold the phone vertically (9:16).</li>
+          <li>• <strong class="text-amber-950">Audio Rules:</strong> Keep raw audio ON. Laughter, jokes, and voice punchlines are the focal points of this video.</li>
+          <li>• <strong class="text-amber-950">If doing Students Telling Jokes:</strong> Pull students aside during recess. Ask them to deliver a rapid joke. Capture the raw reaction laughter right after.</li>
+          <li>• <strong class="text-amber-950">If doing Staff Prep:</strong> Record the fun, unpolished reality—blowing up event balloons, laughing while moving tables, or drinking coffee before the rush.</li>
+        </ul>
+      </div>
+
+      <form class="video-order-form space-y-6">
+        <input type="hidden" name="formType" value="bts_fun">
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Your Name</label>
+          <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Your Email Address</label>
+          <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Select Video Theme Theme</label>
+          <select name="btsTheme" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm bg-white">
+            <option value="Students telling jokes / Candid interactions">Students telling jokes / Candid play interactions</option>
+            <option value="Staff preparing for campus event">Staff prep (Setting up major events, decor behind the scenes)</option>
+            <option value="Casual unscripted fun around campus">Unscripted campus fun (Silly classroom run-ins, candid playground clips)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Sound Design Guidelines</label>
+          <select name="audioTreatment" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm bg-white">
+            <option value="Keep full organic sound">Keep full organic sound (Jokes, punchlines, dialog is key)</option>
+            <option value="Mute organic clips and add playful background music">Mute clips completely and use a playful background track</option>
+            <option value="Mix of Both">Mix of both (Playful background track with key organic dialog peaking through)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-1">Assets Folder Link (Google Drive / Dropbox)</label>
+          <p class="text-[10px] text-amber-600 font-extrabold uppercase tracking-wide mb-2">⚠️ Important: Please set sharing permissions to "Anyone with the link" so our team can access your files.</p>
+          <input type="url" name="fileLink" placeholder="https://drive.google.com/..." required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white text-sm btn-gradient shadow-md uppercase tracking-widest">Generate BTS Blueprint</button>
+        <p class="status-msg hidden text-center text-xs font-semibold mt-4"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="thankYouCard" class="hidden max-w-xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-xl p-12 text-center my-12">
+    <div class="w-16 h-16 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-100 shadow-sm">
+      <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+    </div>
+    <h2 class="text-2xl font-black text-brandDark mb-3">Thank You!</h2>
+    <p class="text-sm font-semibold text-brandGray mb-6">Your order has been successfully submitted. Our team is processing your editorial blueprint.</p>
+    <div class="inline-block bg-purple-50 text-brandPurple text-xs font-extrabold px-4 py-2 rounded-full border border-purple-100">
+      Redirecting to home screen in <span id="countdown">3</span> seconds...
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyO8AjsnhbxkYEY_ZHhSfZblXs6zpBJ9I23KSnzGBPiCO19NPyFoH2KLouwp2lGww-_/exec';
+    const form = document.querySelector('.video-order-form');
+    const statusText = document.querySelector('.status-msg');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const mainCard = form.closest('.max-w-xl');
+    const thankYouCard = document.getElementById('thankYouCard');
+    const countdownEl = document.getElementById('countdown');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      statusText.classList.remove('hidden');
+      statusText.style.color = '#e67e22';
+      statusText.innerText = 'Compiling instructions and generating editor blueprints...';
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           mainCard.classList.add('hidden');
+           thankYouCard.classList.remove('hidden');
+           
+           let secondsLeft = 3;
+           const timer = setInterval(() => {
+             secondsLeft--;
+             countdownEl.innerText = secondsLeft;
+             if (secondsLeft <= 0) {
+               clearInterval(timer);
+               window.location.href = 'index.html';
+             }
+           }, 1000);
+        })
+        .catch(error => {
+           statusText.style.color = '#c0392b';
+           statusText.innerText = 'Execution error. Please try again.';
+           submitBtn.disabled = false;
+        });
+    });
+  </script>
+</body>
+</html>

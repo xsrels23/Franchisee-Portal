@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrichment Program Explainers - Brand Booster Media</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brandDark: '#111827',
+            brandGray: '#1f2937',
+            brandMuted: '#6b7280',
+            brandPink: '#ec4899',
+            brandPurple: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-xl overflow-hidden">
+    <div class="px-8 pt-8 pb-6 border-b border-gray-50 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="logo.png" alt="Brand Boosters Logo" class="w-10 h-10 object-contain mr-3">
+        <div>
+          <span class="font-extrabold text-sm tracking-tight text-brandDark block">Brand Booster Media</span>
+          <span class="text-[8px] font-black text-brandMuted uppercase tracking-widest block -mt-1">Order Pipeline</span>
+        </div>
+      </div>
+      <span class="text-brandPink font-extrabold uppercase tracking-widest text-[9px] bg-brandPink/10 px-3 py-1 rounded-full">Objective 7</span>
+    </div>
+
+    <div class="px-8 py-6 bg-gradient-to-r from-pink-50/30 to-purple-50/30">
+      <h2 class="text-2xl font-black text-brandDark tracking-tight">Enrichment Program Explainers</h2>
+      <p class="text-sm text-brandMuted mt-2 leading-relaxed">
+        Detailed clips focusing on specific strengths, such as a specialized music department or a cutting-edge STEM lab. These attract families looking for specific academic or creative enrichment.
+      </p>
+    </div>
+
+    <div class="p-8">
+      <div class="mb-8 p-5 bg-amber-50/50 border-l-4 border-amber-500 rounded-r-2xl">
+        <h4 class="text-sm font-extrabold text-amber-800 flex items-center gap-2 mb-3">
+          <i data-lucide="video" class="w-4 h-4 text-amber-600"></i>
+          MANDATORY FILMING STANDARD
+        </h4>
+        <ul class="text-xs text-amber-900 space-y-2 font-medium leading-relaxed">
+          <li>• <strong class="text-amber-950">Orientation:</strong> Always hold the phone sideways (16:9 horizontal ratio).</li>
+          <li>• <strong class="text-amber-950">The Presenter Hook:</strong> Film your host standing in the lab or studio. Have them deliver a 10-second vocal introduction directly to the lens.</li>
+          <li>• <strong class="text-amber-950">Action Close-Ups:</strong> Capture 3 highly detailed close-ups of specialized equipment in action (e.g., 3D printer nozzle, violin strings being tuned).</li>
+          <li>• <strong class="text-amber-950">Student Takeaways:</strong> Line up 2-3 students against a plain wall. Film them answering: "What is the coolest thing you've made in this room?" (Keep answers under 5 seconds).</li>
+        </ul>
+      </div>
+
+      <form class="video-order-form space-y-6">
+        <input type="hidden" name="formType" value="program_explainer">
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Your Name</label>
+          <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Your Email Address</label>
+          <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Specialized Program/Department Name</label>
+          <input type="text" name="departmentFeatured" placeholder="e.g., Cutting-Edge STEM Lab or Specialized Music Department" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Key Tools & Features (Comma separated)</label>
+          <input type="text" name="keyFeatures" placeholder="e.g., 3D printers, VR headsets, robotics kits" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-2">Include Key Feature Text Pop-Ups?</label>
+          <select name="textCalloutsPreference" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm bg-white">
+            <option value="Yes">Yes, call out featured gear on screen</option>
+            <option value="No">No, keep visuals clean and free of text boxes</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-black text-brandDark uppercase tracking-wider mb-1">Assets Folder Link (Google Drive / Dropbox)</label>
+          <p class="text-[10px] text-amber-600 font-extrabold uppercase tracking-wide mb-2">⚠️ Important: Please set sharing permissions to "Anyone with the link" so our team can access your files.</p>
+          <input type="url" name="fileLink" placeholder="https://drive.google.com/..." required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brandPurple transition text-sm">
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white text-sm btn-gradient shadow-md uppercase tracking-widest">Generate Explainer Blueprint</button>
+        <p class="status-msg hidden text-center text-xs font-semibold mt-4"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="thankYouCard" class="hidden max-w-xl mx-auto bg-white rounded-3xl border border-gray-100 shadow-xl p-12 text-center my-12">
+    <div class="w-16 h-16 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-100 shadow-sm">
+      <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+    </div>
+    <h2 class="text-2xl font-black text-brandDark mb-3">Thank You!</h2>
+    <p class="text-sm font-semibold text-brandGray mb-6">Your order has been successfully submitted. Our team is processing your editorial blueprint.</p>
+    <div class="inline-block bg-purple-50 text-brandPurple text-xs font-extrabold px-4 py-2 rounded-full border border-purple-100">
+      Redirecting to home screen in <span id="countdown">3</span> seconds...
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyO8AjsnhbxkYEY_ZHhSfZblXs6zpBJ9I23KSnzGBPiCO19NPyFoH2KLouwp2lGww-_/exec';
+    const form = document.querySelector('.video-order-form');
+    const statusText = document.querySelector('.status-msg');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const mainCard = form.closest('.max-w-xl');
+    const thankYouCard = document.getElementById('thankYouCard');
+    const countdownEl = document.getElementById('countdown');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      statusText.classList.remove('hidden');
+      statusText.style.color = '#e67e22';
+      statusText.innerText = 'Compiling instructions and generating editor blueprints...';
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           mainCard.classList.add('hidden');
+           thankYouCard.classList.remove('hidden');
+           
+           let secondsLeft = 3;
+           const timer = setInterval(() => {
+             secondsLeft--;
+             countdownEl.innerText = secondsLeft;
+             if (secondsLeft <= 0) {
+               clearInterval(timer);
+               window.location.href = 'index.html';
+             }
+           }, 1000);
+        })
+        .catch(error => {
+           statusText.style.color = '#c0392b';
+           statusText.innerText = 'Execution error. Please try again.';
+           submitBtn.disabled = false;
+        });
+    });
+  </script>
+</body>
+</html>
